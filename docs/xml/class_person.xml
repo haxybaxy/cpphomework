@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_person" kind="class" language="C++" prot="public">
+    <compoundname>Person</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_person_1a7594663aadc0de77616506df8a2f4128" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Person::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Person::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" line="7" column="17" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1acf9db1a60683f40b20ae569d29852d69" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Person::age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <qualifiedname>Person::age</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" line="8" column="9" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_person_1a546dcfd9e7eab728ed236fe0c7b6d9cf" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Person::hobbies</definition>
+        <argsstring></argsstring>
+        <name>hobbies</name>
+        <qualifiedname>Person::hobbies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" line="9" column="17" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" line="5" column="1" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/RuleOfZero.cpp" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_person_1acf9db1a60683f40b20ae569d29852d69" prot="public" virt="non-virtual"><scope>Person</scope><name>age</name></member>
+      <member refid="class_person_1a546dcfd9e7eab728ed236fe0c7b6d9cf" prot="public" virt="non-virtual"><scope>Person</scope><name>hobbies</name></member>
+      <member refid="class_person_1a7594663aadc0de77616506df8a2f4128" prot="public" virt="non-virtual"><scope>Person</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

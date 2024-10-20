@@ -1,0 +1,39 @@
+\doxysection{oop Namespace Reference}
+\hypertarget{namespaceoop}{}\label{namespaceoop}\index{oop@{oop}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classoop_1_1_dynamic_array}{Dynamic\+Array}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespaceoop_a4fb55e86b3ba8e4678cacc2dd528820d}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classoop_1_1_dynamic_array}{Dynamic\+Array}} \&arr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceoop_a4fb55e86b3ba8e4678cacc2dd528820d}\index{oop@{oop}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!oop@{oop}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{namespaceoop_a4fb55e86b3ba8e4678cacc2dd528820d} 
+std\+::ostream \& oop\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classoop_1_1_dynamic_array}{Dynamic\+Array}} \&}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dynamic_array_8cpp_source_l00092}{92}} of file \mbox{\hyperlink{_dynamic_array_8cpp_source}{Dynamic\+Array.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}["{}};}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ arr.\mbox{\hyperlink{classoop_1_1_dynamic_array_abb22dbf0390980ec98112ef60b984708}{length}};\ ++i)\{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ os\ <<\ arr.\mbox{\hyperlink{classoop_1_1_dynamic_array_ae67e8581b03c7f7f8bc412a28bc7aacd}{data}}[i];}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(i\ !=\ arr.\mbox{\hyperlink{classoop_1_1_dynamic_array_abb22dbf0390980ec98112ef60b984708}{length}}\ -\/\ 1)}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{},\ "{}};}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}]"{}};}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00101\ \}}
+
+\end{DoxyCode}

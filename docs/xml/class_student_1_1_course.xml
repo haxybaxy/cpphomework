@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_student_1_1_course" kind="class" language="C++" prot="public">
+    <compoundname>Student::Course</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_student_1_1_course_1aac62feb1193b7f9b07b98e7fc01a1ed9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Student::Course::courseName</definition>
+        <argsstring></argsstring>
+        <name>courseName</name>
+        <qualifiedname>Student::Course::courseName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="31" column="21" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_student_1_1_course_1a98d4341aed9ef5e63247d861903ddac1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Student::Course::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <qualifiedname>Student::Course::year</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="32" column="13" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_student_1_1_course_1a04355aa5ca8d9a1e010ca0725d82c470" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Student::Course::Course</definition>
+        <argsstring>(const std::string &amp;courseName, int year)</argsstring>
+        <name>Course</name>
+        <qualifiedname>Student::Course::Course</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>courseName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="34" column="9" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="34" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="29" column="5" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="29" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_student_1_1_course_1a04355aa5ca8d9a1e010ca0725d82c470" prot="public" virt="non-virtual"><scope>Student::Course</scope><name>Course</name></member>
+      <member refid="class_student_1_1_course_1aac62feb1193b7f9b07b98e7fc01a1ed9" prot="public" virt="non-virtual"><scope>Student::Course</scope><name>courseName</name></member>
+      <member refid="class_student_1_1_course_1a98d4341aed9ef5e63247d861903ddac1" prot="public" virt="non-virtual"><scope>Student::Course</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

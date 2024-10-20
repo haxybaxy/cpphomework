@@ -1,0 +1,372 @@
+\doxysection{Student Class Reference}
+\hypertarget{class_student}{}\label{class_student}\index{Student@{Student}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_student_1_1_course}{Course}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_student_a7962fe078ff7178ff56073fd83c82744}{Student}} (const std\+::string \&\mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}, int \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}}, double \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}})
+\item 
+std\+::string \mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{get\+Name}} () const
+\item 
+int \mbox{\hyperlink{class_student_af815bffcccc0b1d0b4413ae70f7a4d11}{get\+Age}} () const
+\item 
+double \mbox{\hyperlink{class_student_a3d872c6188ee2042a97614247f7ba3ef}{get\+Gpa}} () const
+\item 
+void \mbox{\hyperlink{class_student_add287224cef065944df9da7e8f38c116}{set\+Name}} (const std\+::string \&new\+Name)
+\item 
+void \mbox{\hyperlink{class_student_ab4888f0d5da4bae458ea3853ebeb314b}{set\+Age}} (int new\+Age)
+\item 
+void \mbox{\hyperlink{class_student_a88065a49eb909dc29e72ea528dcb6c24}{set\+Gpa}} (double new\+Gpa)
+\item 
+void \mbox{\hyperlink{class_student_a3567f5c4220ffa88a8855998b3b99b43}{print\+Info}} () const
+\item 
+void \mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{enroll}} (const \mbox{\hyperlink{class_student_1_1_course}{Course}} \&course)
+\item 
+void \mbox{\hyperlink{class_student_a6c10a0e1d02be92cdf058e1aa069e973}{print\+Courses}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_student_a9a22c0f9af7446b6c529b623e780b134}{get\+Num\+Students}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}
+\item 
+int \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}}
+\item 
+double \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}
+\item 
+bool \mbox{\hyperlink{class_student_abbcc0dc9bb1108f48d0471ac627f290f}{age\+Accessed}} = false
+\item 
+std\+::vector$<$ class \mbox{\hyperlink{class_student_1_1_course}{Course}} $>$ \mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{num\+Students}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_student_a9c47863c3ed0d00457f704ca7dd5d6b8}{compare\+Gpa}} (const \mbox{\hyperlink{class_student}{Student}} \&student1, const \mbox{\hyperlink{class_student}{Student}} \&student2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_student_a7962fe078ff7178ff56073fd83c82744}\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}}
+{\footnotesize\ttfamily \label{class_student_a7962fe078ff7178ff56073fd83c82744} 
+Student\+::\+Student (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{int}]{age}{, }\item[{double}]{gpa}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00082\ \ \ \mbox{\hyperlink{class_student_add287224cef065944df9da7e8f38c116}{setName}}(\mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}});}
+\DoxyCodeLine{00083\ \ \ \mbox{\hyperlink{class_student_ab4888f0d5da4bae458ea3853ebeb314b}{setAge}}(\mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}});}
+\DoxyCodeLine{00084\ \ \ \mbox{\hyperlink{class_student_a88065a49eb909dc29e72ea528dcb6c24}{setGpa}}(\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}});}
+\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{numStudents}}++;}
+\DoxyCodeLine{00086\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_student_a30e977ee3bab39e95f0d5090c2b664ce}\index{Student@{Student}!enroll@{enroll}}
+\index{enroll@{enroll}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{enroll()}{enroll()}}
+{\footnotesize\ttfamily \label{class_student_a30e977ee3bab39e95f0d5090c2b664ce} 
+void Student\+::enroll (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student_1_1_course}{Course}} \&}]{course}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00149}{149}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}}.push\_back(course);}
+\DoxyCodeLine{00151\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_af815bffcccc0b1d0b4413ae70f7a4d11}\index{Student@{Student}!getAge@{getAge}}
+\index{getAge@{getAge}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getAge()}{getAge()}}
+{\footnotesize\ttfamily \label{class_student_af815bffcccc0b1d0b4413ae70f7a4d11} 
+int Student\+::get\+Age (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \mbox{\hyperlink{class_student_abbcc0dc9bb1108f48d0471ac627f290f}{ageAccessed}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}};}
+\DoxyCodeLine{00097\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_a3d872c6188ee2042a97614247f7ba3ef}\index{Student@{Student}!getGpa@{getGpa}}
+\index{getGpa@{getGpa}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getGpa()}{getGpa()}}
+{\footnotesize\ttfamily \label{class_student_a3d872c6188ee2042a97614247f7ba3ef} 
+double Student\+::get\+Gpa (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00099}{99}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}};}
+\DoxyCodeLine{00101\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_af2b671e64af8a240f59652414a8b8047}\index{Student@{Student}!getName@{getName}}
+\index{getName@{getName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_student_af2b671e64af8a240f59652414a8b8047} 
+std\+::string Student\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00090}{90}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}};}
+\DoxyCodeLine{00092\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_a9a22c0f9af7446b6c529b623e780b134}\index{Student@{Student}!getNumStudents@{getNumStudents}}
+\index{getNumStudents@{getNumStudents}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getNumStudents()}{getNumStudents()}}
+{\footnotesize\ttfamily \label{class_student_a9a22c0f9af7446b6c529b623e780b134} 
+int Student\+::get\+Num\+Students (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00103}{103}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{numStudents}};}
+\DoxyCodeLine{00105\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_a6c10a0e1d02be92cdf058e1aa069e973}\index{Student@{Student}!printCourses@{printCourses}}
+\index{printCourses@{printCourses}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{printCourses()}{printCourses()}}
+{\footnotesize\ttfamily \label{class_student_a6c10a0e1d02be92cdf058e1aa069e973} 
+void Student\+::print\+Courses (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00155}{155}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}}.empty())\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ <<\ \textcolor{stringliteral}{"{}\ is\ not\ enrolled\ in\ any\ courses."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00158\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ <<\ \textcolor{stringliteral}{"{}'s\ Courses:"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ course\ :\ \mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}})\ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ -\/\ "{}}\ <<\ course.courseName}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ (Year:\ "{}}\ <<\ course.year\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_a3567f5c4220ffa88a8855998b3b99b43}\index{Student@{Student}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily \label{class_student_a3567f5c4220ffa88a8855998b3b99b43} 
+void Student\+::print\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00135}{135}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00136\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Name:\ "{}}\ <<\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ <<\ std::endl;}
+\DoxyCodeLine{00137\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Age:\ "{}}\ <<\ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}}\ <<\ \textcolor{stringliteral}{"{}\ Age\ Accessed:\ "{}}<<\ (\mbox{\hyperlink{class_student_abbcc0dc9bb1108f48d0471ac627f290f}{ageAccessed}}\ ?\ \textcolor{stringliteral}{"{}true"{}}\ :\ \textcolor{stringliteral}{"{}false"{}})\ <<\ std::endl;}
+\DoxyCodeLine{00138\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}GPA:\ "{}}\ <<\ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}\ <<\ std::endl;}
+\DoxyCodeLine{00139\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_ab4888f0d5da4bae458ea3853ebeb314b}\index{Student@{Student}!setAge@{setAge}}
+\index{setAge@{setAge}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setAge()}{setAge()}}
+{\footnotesize\ttfamily \label{class_student_ab4888f0d5da4bae458ea3853ebeb314b} 
+void Student\+::set\+Age (\begin{DoxyParamCaption}\item[{int}]{new\+Age}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00118}{118}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \textcolor{keywordflow}{if}\ (newAge\ <\ 0\ ||\ newAge\ >\ 120)\ \{}
+\DoxyCodeLine{00120\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Age\ needs\ to\ be\ between\ 0\ and\ 120"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00122\ \ \ \}}
+\DoxyCodeLine{00123\ \ \ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}}\ =\ newAge;}
+\DoxyCodeLine{00124\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_a88065a49eb909dc29e72ea528dcb6c24}\index{Student@{Student}!setGpa@{setGpa}}
+\index{setGpa@{setGpa}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setGpa()}{setGpa()}}
+{\footnotesize\ttfamily \label{class_student_a88065a49eb909dc29e72ea528dcb6c24} 
+void Student\+::set\+Gpa (\begin{DoxyParamCaption}\item[{double}]{new\+Gpa}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00126}{126}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00127\ \ \ \textcolor{keywordflow}{if}\ (newGpa\ <\ 0\ ||\ newGpa\ >\ 10)\ \{}
+\DoxyCodeLine{00128\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}GPA\ needs\ to\ be\ between\ 0\ and\ 10"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00130\ \ \ \}}
+\DoxyCodeLine{00131\ \ \ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}\ =\ newGpa;}
+\DoxyCodeLine{00132\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_student_add287224cef065944df9da7e8f38c116}\index{Student@{Student}!setName@{setName}}
+\index{setName@{setName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_student_add287224cef065944df9da7e8f38c116} 
+void Student\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{new\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00111\ \ \ \textcolor{keywordflow}{if}\ (newName.empty())\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Name\ cannot\ be\ empty"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00114\ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ =\ newName;}
+\DoxyCodeLine{00116\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_student_a9c47863c3ed0d00457f704ca7dd5d6b8}\index{Student@{Student}!compareGpa@{compareGpa}}
+\index{compareGpa@{compareGpa}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{compareGpa}{compareGpa}}
+{\footnotesize\ttfamily \label{class_student_a9c47863c3ed0d00457f704ca7dd5d6b8} 
+bool compare\+Gpa (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{student1}{, }\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{student2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00143}{143}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \textcolor{keywordflow}{return}\ student1.\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}\ >\ student2.\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}};}
+\DoxyCodeLine{00145\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_student_a552a431a43ffc545d180424597d51f97}\index{Student@{Student}!age@{age}}
+\index{age@{age}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{age}{age}}
+{\footnotesize\ttfamily \label{class_student_a552a431a43ffc545d180424597d51f97} 
+int Student\+::age\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+\Hypertarget{class_student_abbcc0dc9bb1108f48d0471ac627f290f}\index{Student@{Student}!ageAccessed@{ageAccessed}}
+\index{ageAccessed@{ageAccessed}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{ageAccessed}{ageAccessed}}
+{\footnotesize\ttfamily \label{class_student_abbcc0dc9bb1108f48d0471ac627f290f} 
+bool Student\+::age\+Accessed = false\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+\Hypertarget{class_student_af6499083c4f357585fdacf2e334fe99a}\index{Student@{Student}!courses@{courses}}
+\index{courses@{courses}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{courses}{courses}}
+{\footnotesize\ttfamily \label{class_student_af6499083c4f357585fdacf2e334fe99a} 
+std\+::vector$<$class \mbox{\hyperlink{class_student_1_1_course}{Course}}$>$ Student\+::courses\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+\Hypertarget{class_student_ad87196a7500cae94e5ed747770fd824b}\index{Student@{Student}!gpa@{gpa}}
+\index{gpa@{gpa}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{gpa}{gpa}}
+{\footnotesize\ttfamily \label{class_student_ad87196a7500cae94e5ed747770fd824b} 
+double Student\+::gpa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+\Hypertarget{class_student_a9aeb48a925f370292564def17482f0ec}\index{Student@{Student}!name@{name}}
+\index{name@{name}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_student_a9aeb48a925f370292564def17482f0ec} 
+std\+::string Student\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+\Hypertarget{class_student_aa120a31eaa4632ee9596d720444e5356}\index{Student@{Student}!numStudents@{numStudents}}
+\index{numStudents@{numStudents}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{numStudents}{numStudents}}
+{\footnotesize\ttfamily \label{class_student_aa120a31eaa4632ee9596d720444e5356} 
+int Student\+::num\+Students = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/zaidsaheb/\+Desktop/oophomework/src/\mbox{\hyperlink{_student_class_8cpp}{Student\+Class.\+cpp}}\end{DoxyCompactItemize}

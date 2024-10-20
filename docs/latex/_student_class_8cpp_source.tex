@@ -1,0 +1,204 @@
+\doxysection{Student\+Class.\+cpp}
+\hypertarget{_student_class_8cpp_source}{}\label{_student_class_8cpp_source}\index{/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp@{/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp}}
+\mbox{\hyperlink{_student_class_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00008}\mbox{\hyperlink{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}{00008}}\ std::tuple\ <std::string,\ int,\ double>\ \mbox{\hyperlink{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}{getStudentInfo}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00009}00009\ \ \ std::vector<std::string>\ names\ =\ \{\textcolor{stringliteral}{"{}Zaid"{}},\ \textcolor{stringliteral}{"{}Jose"{}},\ \textcolor{stringliteral}{"{}Sebastian"{}},\ \textcolor{stringliteral}{"{}Laura"{}},\ \textcolor{stringliteral}{"{}Sofia"{}}\};\ \textcolor{comment}{//\ List\ of\ \ names}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00010}00010\ \ \ std::random\_device\ rd;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00011}00011\ \ \ std::mt19937\ gen(rd());}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00013}00013\ \ \ std::uniform\_int\_distribution<int>\ nameDist(0,\ names.size()\ -\/\ 1);\ \textcolor{comment}{//\ Randomly\ select\ a\ first\ name}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00014}00014\ \ \ std::string\ name\ =\ names[nameDist(gen)];}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00016}00016\ \ \ std::uniform\_int\_distribution<int>\ ageDist(18,\ 25);\ \textcolor{comment}{//\ Randomly\ select\ an\ age}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00017}00017\ \ \ \textcolor{keywordtype}{int}\ age\ =\ ageDist(gen);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00019}00019\ \ \ std::uniform\_real\_distribution<double>\ gpaDist(1.0,\ 10.0);\ \textcolor{comment}{//\ Randomly\ select\ a\ GPA}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00020}00020\ \ \ \textcolor{keywordtype}{double}\ gpa\ =\ gpaDist(gen);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00022}00022\ \ \ \textcolor{keywordflow}{return}\ std::make\_tuple(name,\ age,\ gpa);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00023}00023\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00026}\mbox{\hyperlink{class_student}{00026}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_student}{Student}}\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00027}00027\ \ \ \textcolor{comment}{//\ Nested\ Class}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00028}00028\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00029}\mbox{\hyperlink{class_student_1_1_course}{00029}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_student_1_1_course}{Course}}\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00031}\mbox{\hyperlink{class_student_1_1_course_aac62feb1193b7f9b07b98e7fc01a1ed9}{00031}}\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_student_1_1_course_aac62feb1193b7f9b07b98e7fc01a1ed9}{courseName}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00032}\mbox{\hyperlink{class_student_1_1_course_a98d4341aed9ef5e63247d861903ddac1}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_1_1_course_a98d4341aed9ef5e63247d861903ddac1}{year}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00034}\mbox{\hyperlink{class_student_1_1_course_a04355aa5ca8d9a1e010ca0725d82c470}{00034}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_student_1_1_course_a04355aa5ca8d9a1e010ca0725d82c470}{Course}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_student_1_1_course_aac62feb1193b7f9b07b98e7fc01a1ed9}{courseName}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_1_1_course_a98d4341aed9ef5e63247d861903ddac1}{year}})}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_student_1_1_course_aac62feb1193b7f9b07b98e7fc01a1ed9}{courseName}}(\mbox{\hyperlink{class_student_1_1_course_aac62feb1193b7f9b07b98e7fc01a1ed9}{courseName}}),\ \mbox{\hyperlink{class_student_1_1_course_a98d4341aed9ef5e63247d861903ddac1}{year}}(\mbox{\hyperlink{class_student_1_1_course_a98d4341aed9ef5e63247d861903ddac1}{year}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00036}00036\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00038}00038\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00039}\mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{00039}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00040}\mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{00040}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00041}\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{00041}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00043}\mbox{\hyperlink{class_student_abbcc0dc9bb1108f48d0471ac627f290f}{00043}}\ \ \ \ \ \textcolor{keyword}{mutable}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_student_abbcc0dc9bb1108f48d0471ac627f290f}{ageAccessed}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00045}\mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{00045}}\ \ \ \ \ std::vector<class\ Course>\ \mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00047}\mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{00047}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{numStudents}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00049}00049\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{class_student_a7962fe078ff7178ff56073fd83c82744}{Student}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}});}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//Getters}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00055}00055\ \ \ \ \ std::string\ \mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_af815bffcccc0b1d0b4413ae70f7a4d11}{getAge}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_a3d872c6188ee2042a97614247f7ba3ef}{getGpa}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_a9a22c0f9af7446b6c529b623e780b134}{getNumStudents}}();}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//Setters}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_add287224cef065944df9da7e8f38c116}{setName}}(\textcolor{keyword}{const}\ std::string\&\ newName);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_ab4888f0d5da4bae458ea3853ebeb314b}{setAge}}(\textcolor{keywordtype}{int}\ newAge);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a88065a49eb909dc29e72ea528dcb6c24}{setGpa}}(\textcolor{keywordtype}{double}\ newGpa);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{comment}{//Misc}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a3567f5c4220ffa88a8855998b3b99b43}{printInfo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{comment}{//Friend\ Function}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_student_a9c47863c3ed0d00457f704ca7dd5d6b8}{compareGpa}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&\ student1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&\ student2);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{comment}{//\ Methods\ related\ to\ courses}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{enroll}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student_1_1_course}{Course}}\&\ course);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a6c10a0e1d02be92cdf058e1aa069e973}{printCourses}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00077}00077\ \};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00079}00079\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{Student::numStudents}}\ =\ 0;\ \textcolor{comment}{//\ Initialize\ the\ static\ variable}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00081}\mbox{\hyperlink{class_student_a7962fe078ff7178ff56073fd83c82744}{00081}}\ \mbox{\hyperlink{class_student_a7962fe078ff7178ff56073fd83c82744}{Student::Student}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{int}\ age,\ \textcolor{keywordtype}{double}\ gpa)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00082}00082\ \ \ \mbox{\hyperlink{class_student_add287224cef065944df9da7e8f38c116}{setName}}(\mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}});}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00083}00083\ \ \ \mbox{\hyperlink{class_student_ab4888f0d5da4bae458ea3853ebeb314b}{setAge}}(\mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}});}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00084}00084\ \ \ \mbox{\hyperlink{class_student_a88065a49eb909dc29e72ea528dcb6c24}{setGpa}}(\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}});}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00085}00085\ \ \ \mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{numStudents}}++;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00086}00086\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00088}00088\ \textcolor{comment}{//Accessors}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00090}\mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{00090}}\ std::string\ \mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{Student::getName}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00091}00091\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00092}00092\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00094}\mbox{\hyperlink{class_student_af815bffcccc0b1d0b4413ae70f7a4d11}{00094}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_af815bffcccc0b1d0b4413ae70f7a4d11}{Student::getAge}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00095}00095\ \ \ \mbox{\hyperlink{class_student_abbcc0dc9bb1108f48d0471ac627f290f}{ageAccessed}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00096}00096\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00097}00097\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00099}\mbox{\hyperlink{class_student_a3d872c6188ee2042a97614247f7ba3ef}{00099}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_a3d872c6188ee2042a97614247f7ba3ef}{Student::getGpa}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00100}00100\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00101}00101\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00103}\mbox{\hyperlink{class_student_a9a22c0f9af7446b6c529b623e780b134}{00103}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_a9a22c0f9af7446b6c529b623e780b134}{Student::getNumStudents}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00104}00104\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_student_aa120a31eaa4632ee9596d720444e5356}{numStudents}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00105}00105\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00108}00108\ \textcolor{comment}{//Mutators}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00110}\mbox{\hyperlink{class_student_add287224cef065944df9da7e8f38c116}{00110}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_add287224cef065944df9da7e8f38c116}{Student::setName}}(\textcolor{keyword}{const}\ std::string\&\ newName)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00111}00111\ \ \ \textcolor{keywordflow}{if}\ (newName.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00112}00112\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Name\ cannot\ be\ empty"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00114}00114\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00115}00115\ \ \ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ =\ newName;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00116}00116\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00118}\mbox{\hyperlink{class_student_ab4888f0d5da4bae458ea3853ebeb314b}{00118}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_ab4888f0d5da4bae458ea3853ebeb314b}{Student::setAge}}(\textcolor{keywordtype}{int}\ newAge)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00119}00119\ \ \ \textcolor{keywordflow}{if}\ (newAge\ <\ 0\ ||\ newAge\ >\ 120)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00120}00120\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Age\ needs\ to\ be\ between\ 0\ and\ 120"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00121}00121\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00122}00122\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00123}00123\ \ \ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}}\ =\ newAge;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00124}00124\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00126}\mbox{\hyperlink{class_student_a88065a49eb909dc29e72ea528dcb6c24}{00126}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a88065a49eb909dc29e72ea528dcb6c24}{Student::setGpa}}(\textcolor{keywordtype}{double}\ newGpa)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00127}00127\ \ \ \textcolor{keywordflow}{if}\ (newGpa\ <\ 0\ ||\ newGpa\ >\ 10)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00128}00128\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}GPA\ needs\ to\ be\ between\ 0\ and\ 10"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00130}00130\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00131}00131\ \ \ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}\ =\ newGpa;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00132}00132\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00134}00134\ \textcolor{comment}{//Misc}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00135}\mbox{\hyperlink{class_student_a3567f5c4220ffa88a8855998b3b99b43}{00135}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a3567f5c4220ffa88a8855998b3b99b43}{Student::printInfo}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00136}00136\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Name:\ "{}}\ <<\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00137}00137\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Age:\ "{}}\ <<\ \mbox{\hyperlink{class_student_a552a431a43ffc545d180424597d51f97}{age}}\ <<\ \textcolor{stringliteral}{"{}\ Age\ Accessed:\ "{}}<<\ (\mbox{\hyperlink{class_student_abbcc0dc9bb1108f48d0471ac627f290f}{ageAccessed}}\ ?\ \textcolor{stringliteral}{"{}true"{}}\ :\ \textcolor{stringliteral}{"{}false"{}})\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00138}00138\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}GPA:\ "{}}\ <<\ \mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00139}00139\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00142}00142\ \textcolor{comment}{//Friend\ Function}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00143}\mbox{\hyperlink{class_student_a9c47863c3ed0d00457f704ca7dd5d6b8}{00143}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_student_class_8cpp_a9c47863c3ed0d00457f704ca7dd5d6b8}{compareGpa}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&\ student1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&\ student2)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00144}00144\ \ \ \textcolor{keywordflow}{return}\ student1.\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}\ >\ student2.\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}};}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00145}00145\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00148}00148\ \textcolor{comment}{//Nested\ Class\ Functions}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00149}\mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{00149}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{Student::enroll}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student_1_1_course}{Course}}\&\ course)\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00150}00150\ \ \ \ \ \mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}}.push\_back(course);}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00151}00151\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00154}00154\ \textcolor{comment}{//\ Method\ to\ print\ enrolled\ courses}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00155}\mbox{\hyperlink{class_student_a6c10a0e1d02be92cdf058e1aa069e973}{00155}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a6c10a0e1d02be92cdf058e1aa069e973}{Student::printCourses}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00156}00156\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}}.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00157}00157\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ <<\ \textcolor{stringliteral}{"{}\ is\ not\ enrolled\ in\ any\ courses."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00158}00158\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00159}00159\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{class_student_a9aeb48a925f370292564def17482f0ec}{name}}\ <<\ \textcolor{stringliteral}{"{}'s\ Courses:"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ course\ :\ \mbox{\hyperlink{class_student_af6499083c4f357585fdacf2e334fe99a}{courses}})\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ -\/\ "{}}\ <<\ course.courseName}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ (Year:\ "{}}\ <<\ course.year\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00163}00163\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00164}00164\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00165}00165\ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00167}\mbox{\hyperlink{_student_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00167}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_student_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00168}00168\ \ \ std::tuple\ <std::string,\ int,\ double>\ studentInfo1\ =\ \mbox{\hyperlink{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}{getStudentInfo}}();}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00169}00169\ \ \ std::tuple\ <std::string,\ int,\ double>\ studentInfo2\ =\ \mbox{\hyperlink{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}{getStudentInfo}}();}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00170}00170\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00171}00171\ \ \ \textcolor{comment}{//\ Create\ a\ student\ object\ using\ the\ generated\ info}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00172}00172\ \ \ \mbox{\hyperlink{class_student}{Student}}\ student1(std::get<0>(studentInfo1),\ std::get<1>(studentInfo1),\ std::get<2>(studentInfo1));}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00173}00173\ \ \ \mbox{\hyperlink{class_student}{Student}}\ student2(std::get<0>(studentInfo2),\ std::get<1>(studentInfo2),\ std::get<2>(studentInfo2));}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00174}00174\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00175}00175\ \ \ \textcolor{comment}{//\ Enroll\ the\ student\ in\ some\ courses}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00176}00176\ \ \ student1.\mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{enroll}}(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}Math"{}},\ 2021));}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00177}00177\ \ \ student1.\mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{enroll}}(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}Science"{}},\ 2022));}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00178}00178\ \ \ student2.\mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{enroll}}(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}History"{}},\ 2021));}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00179}00179\ \ \ student2.\mbox{\hyperlink{class_student_a30e977ee3bab39e95f0d5090c2b664ce}{enroll}}(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}Art"{}},\ 2022));}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00180}00180\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00181}00181\ \ \ \textcolor{comment}{//\ Print\ student\ info\ and\ courses}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00182}00182\ \ \ student1.\mbox{\hyperlink{class_student_a3567f5c4220ffa88a8855998b3b99b43}{printInfo}}();}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00183}00183\ \ \ student1.\mbox{\hyperlink{class_student_a6c10a0e1d02be92cdf058e1aa069e973}{printCourses}}();}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00184}00184\ \ \ student2.\mbox{\hyperlink{class_student_a3567f5c4220ffa88a8855998b3b99b43}{printInfo}}();}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00185}00185\ \ \ student2.\mbox{\hyperlink{class_student_a6c10a0e1d02be92cdf058e1aa069e973}{printCourses}}();}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00186}00186\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00187}00187\ \ \ \textcolor{comment}{//\ Print\ the\ number\ of\ students}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00188}00188\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Number\ of\ students:\ "{}}\ <<\ \mbox{\hyperlink{class_student_a9a22c0f9af7446b6c529b623e780b134}{Student::getNumStudents}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00189}00189\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00190}00190\ \ \ \textcolor{comment}{//\ Compare\ the\ GPAs\ of\ the\ two\ students}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00191}00191\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_student_class_8cpp_a9c47863c3ed0d00457f704ca7dd5d6b8}{compareGpa}}(student1,\ student2))\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00192}00192\ \ \ \ \ std::cout\ <<\ student1.\mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{getName}}()\ <<\ \textcolor{stringliteral}{"{}\ has\ a\ higher\ GPA\ than\ "{}}\ <<\ student2.\mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{getName}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00193}00193\ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00194}00194\ \ \ \ \ std::cout\ <<\ student2.\mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{getName}}()\ <<\ \textcolor{stringliteral}{"{}\ has\ a\ higher\ GPA\ than\ "{}}\ <<\ student1.\mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{getName}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00195}00195\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00196}00196\ }
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00197}00197\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_student_class_8cpp_source_l00198}00198\ \}}
+
+\end{DoxyCode}

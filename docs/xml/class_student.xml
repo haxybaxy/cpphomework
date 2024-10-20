@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_student" kind="class" language="C++" prot="public">
+    <compoundname>Student</compoundname>
+    <innerclass refid="class_student_1_1_course" prot="public">Student::Course</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_student_1a9aeb48a925f370292564def17482f0ec" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Student::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Student::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="39" column="17" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_student_1a552a431a43ffc545d180424597d51f97" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Student::age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <qualifiedname>Student::age</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="40" column="9" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_student_1ad87196a7500cae94e5ed747770fd824b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Student::gpa</definition>
+        <argsstring></argsstring>
+        <name>gpa</name>
+        <qualifiedname>Student::gpa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="41" column="12" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_student_1abbcc0dc9bb1108f48d0471ac627f290f" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool Student::ageAccessed</definition>
+        <argsstring></argsstring>
+        <name>ageAccessed</name>
+        <qualifiedname>Student::ageAccessed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="43" column="18" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_student_1af6499083c4f357585fdacf2e334fe99a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; class <ref refid="class_student_1_1_course" kindref="compound">Course</ref> &gt;</type>
+        <definition>std::vector&lt;class Course&gt; Student::courses</definition>
+        <argsstring></argsstring>
+        <name>courses</name>
+        <qualifiedname>Student::courses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="45" column="17" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_student_1aa120a31eaa4632ee9596d720444e5356" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Student::numStudents</definition>
+        <argsstring></argsstring>
+        <name>numStudents</name>
+        <qualifiedname>Student::numStudents</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="47" column="16" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_student_1a7962fe078ff7178ff56073fd83c82744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Student::Student</definition>
+        <argsstring>(const std::string &amp;name, int age, double gpa)</argsstring>
+        <name>Student</name>
+        <qualifiedname>Student::Student</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>age</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gpa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="52" column="5" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1af2b671e64af8a240f59652414a8b8047" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Student::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>Student::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="55" column="17" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1af815bffcccc0b1d0b4413ae70f7a4d11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Student::getAge</definition>
+        <argsstring>() const</argsstring>
+        <name>getAge</name>
+        <qualifiedname>Student::getAge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="56" column="9" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1a3d872c6188ee2042a97614247f7ba3ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Student::getGpa</definition>
+        <argsstring>() const</argsstring>
+        <name>getGpa</name>
+        <qualifiedname>Student::getGpa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="57" column="12" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1add287224cef065944df9da7e8f38c116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Student::setName</definition>
+        <argsstring>(const std::string &amp;newName)</argsstring>
+        <name>setName</name>
+        <qualifiedname>Student::setName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="61" column="10" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1ab4888f0d5da4bae458ea3853ebeb314b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Student::setAge</definition>
+        <argsstring>(int newAge)</argsstring>
+        <name>setAge</name>
+        <qualifiedname>Student::setAge</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>newAge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="62" column="10" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="118" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1a88065a49eb909dc29e72ea528dcb6c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Student::setGpa</definition>
+        <argsstring>(double newGpa)</argsstring>
+        <name>setGpa</name>
+        <qualifiedname>Student::setGpa</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>newGpa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="63" column="10" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="126" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1a3567f5c4220ffa88a8855998b3b99b43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Student::printInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>printInfo</name>
+        <qualifiedname>Student::printInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="66" column="10" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1a30e977ee3bab39e95f0d5090c2b664ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Student::enroll</definition>
+        <argsstring>(const Course &amp;course)</argsstring>
+        <name>enroll</name>
+        <qualifiedname>Student::enroll</qualifiedname>
+        <param>
+          <type>const <ref refid="class_student_1_1_course" kindref="compound">Course</ref> &amp;</type>
+          <declname>course</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="74" column="10" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_student_1a6c10a0e1d02be92cdf058e1aa069e973" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Student::printCourses</definition>
+        <argsstring>() const</argsstring>
+        <name>printCourses</name>
+        <qualifiedname>Student::printCourses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="76" column="10" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="155" bodyend="165"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_student_1a9a22c0f9af7446b6c529b623e780b134" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Student::getNumStudents</definition>
+        <argsstring>()</argsstring>
+        <name>getNumStudents</name>
+        <qualifiedname>Student::getNumStudents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="58" column="16" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_student_1a9c47863c3ed0d00457f704ca7dd5d6b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool compareGpa</definition>
+        <argsstring>(const Student &amp;student1, const Student &amp;student2)</argsstring>
+        <name>compareGpa</name>
+        <qualifiedname>Student::compareGpa</qualifiedname>
+        <param>
+          <type>const <ref refid="class_student" kindref="compound">Student</ref> &amp;</type>
+          <declname>student1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_student" kindref="compound">Student</ref> &amp;</type>
+          <declname>student2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="70" column="17" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="143" bodyend="145"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" line="26" column="1" bodyfile="/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp" bodystart="26" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_student_1a552a431a43ffc545d180424597d51f97" prot="private" virt="non-virtual"><scope>Student</scope><name>age</name></member>
+      <member refid="class_student_1abbcc0dc9bb1108f48d0471ac627f290f" prot="private" virt="non-virtual"><scope>Student</scope><name>ageAccessed</name></member>
+      <member refid="class_student_1a9c47863c3ed0d00457f704ca7dd5d6b8" prot="public" virt="non-virtual"><scope>Student</scope><name>compareGpa</name></member>
+      <member refid="class_student_1af6499083c4f357585fdacf2e334fe99a" prot="private" virt="non-virtual"><scope>Student</scope><name>courses</name></member>
+      <member refid="class_student_1a30e977ee3bab39e95f0d5090c2b664ce" prot="public" virt="non-virtual"><scope>Student</scope><name>enroll</name></member>
+      <member refid="class_student_1af815bffcccc0b1d0b4413ae70f7a4d11" prot="public" virt="non-virtual"><scope>Student</scope><name>getAge</name></member>
+      <member refid="class_student_1a3d872c6188ee2042a97614247f7ba3ef" prot="public" virt="non-virtual"><scope>Student</scope><name>getGpa</name></member>
+      <member refid="class_student_1af2b671e64af8a240f59652414a8b8047" prot="public" virt="non-virtual"><scope>Student</scope><name>getName</name></member>
+      <member refid="class_student_1a9a22c0f9af7446b6c529b623e780b134" prot="public" virt="non-virtual"><scope>Student</scope><name>getNumStudents</name></member>
+      <member refid="class_student_1ad87196a7500cae94e5ed747770fd824b" prot="private" virt="non-virtual"><scope>Student</scope><name>gpa</name></member>
+      <member refid="class_student_1a9aeb48a925f370292564def17482f0ec" prot="private" virt="non-virtual"><scope>Student</scope><name>name</name></member>
+      <member refid="class_student_1aa120a31eaa4632ee9596d720444e5356" prot="private" virt="non-virtual"><scope>Student</scope><name>numStudents</name></member>
+      <member refid="class_student_1a6c10a0e1d02be92cdf058e1aa069e973" prot="public" virt="non-virtual"><scope>Student</scope><name>printCourses</name></member>
+      <member refid="class_student_1a3567f5c4220ffa88a8855998b3b99b43" prot="public" virt="non-virtual"><scope>Student</scope><name>printInfo</name></member>
+      <member refid="class_student_1ab4888f0d5da4bae458ea3853ebeb314b" prot="public" virt="non-virtual"><scope>Student</scope><name>setAge</name></member>
+      <member refid="class_student_1a88065a49eb909dc29e72ea528dcb6c24" prot="public" virt="non-virtual"><scope>Student</scope><name>setGpa</name></member>
+      <member refid="class_student_1add287224cef065944df9da7e8f38c116" prot="public" virt="non-virtual"><scope>Student</scope><name>setName</name></member>
+      <member refid="class_student_1a7962fe078ff7178ff56073fd83c82744" prot="public" virt="non-virtual"><scope>Student</scope><name>Student</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

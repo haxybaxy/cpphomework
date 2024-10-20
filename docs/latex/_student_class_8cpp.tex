@@ -1,0 +1,120 @@
+\doxysection{/\+Users/zaidsaheb/\+Desktop/oophomework/src/\+Student\+Class.cpp File Reference}
+\hypertarget{_student_class_8cpp}{}\label{_student_class_8cpp}\index{/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp@{/Users/zaidsaheb/Desktop/oophomework/src/StudentClass.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_student}{Student}}
+\item 
+class \mbox{\hyperlink{class_student_1_1_course}{Student\+::\+Course}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::tuple$<$ std\+::string, int, double $>$ \mbox{\hyperlink{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}{get\+Student\+Info}} ()
+\item 
+bool \mbox{\hyperlink{_student_class_8cpp_a9c47863c3ed0d00457f704ca7dd5d6b8}{compare\+Gpa}} (const \mbox{\hyperlink{class_student}{Student}} \&student1, const \mbox{\hyperlink{class_student}{Student}} \&student2)
+\item 
+int \mbox{\hyperlink{_student_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_student_class_8cpp_a9c47863c3ed0d00457f704ca7dd5d6b8}\index{StudentClass.cpp@{StudentClass.cpp}!compareGpa@{compareGpa}}
+\index{compareGpa@{compareGpa}!StudentClass.cpp@{StudentClass.cpp}}
+\doxysubsubsection{\texorpdfstring{compareGpa()}{compareGpa()}}
+{\footnotesize\ttfamily \label{_student_class_8cpp_a9c47863c3ed0d00457f704ca7dd5d6b8} 
+bool compare\+Gpa (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{student1}{, }\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{student2}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00143}{143}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \textcolor{keywordflow}{return}\ student1.\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}}\ >\ student2.\mbox{\hyperlink{class_student_ad87196a7500cae94e5ed747770fd824b}{gpa}};}
+\DoxyCodeLine{00145\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}\index{StudentClass.cpp@{StudentClass.cpp}!getStudentInfo@{getStudentInfo}}
+\index{getStudentInfo@{getStudentInfo}!StudentClass.cpp@{StudentClass.cpp}}
+\doxysubsubsection{\texorpdfstring{getStudentInfo()}{getStudentInfo()}}
+{\footnotesize\ttfamily \label{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b} 
+std\+::tuple$<$ std\+::string, int, double $>$ get\+Student\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00009\ \ \ std::vector<std::string>\ names\ =\ \{\textcolor{stringliteral}{"{}Zaid"{}},\ \textcolor{stringliteral}{"{}Jose"{}},\ \textcolor{stringliteral}{"{}Sebastian"{}},\ \textcolor{stringliteral}{"{}Laura"{}},\ \textcolor{stringliteral}{"{}Sofia"{}}\};\ \textcolor{comment}{//\ List\ of\ \ names}}
+\DoxyCodeLine{00010\ \ \ std::random\_device\ rd;}
+\DoxyCodeLine{00011\ \ \ std::mt19937\ gen(rd());}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ std::uniform\_int\_distribution<int>\ nameDist(0,\ names.size()\ -\/\ 1);\ \textcolor{comment}{//\ Randomly\ select\ a\ first\ name}}
+\DoxyCodeLine{00014\ \ \ std::string\ name\ =\ names[nameDist(gen)];}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ std::uniform\_int\_distribution<int>\ ageDist(18,\ 25);\ \textcolor{comment}{//\ Randomly\ select\ an\ age}}
+\DoxyCodeLine{00017\ \ \ \textcolor{keywordtype}{int}\ age\ =\ ageDist(gen);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ std::uniform\_real\_distribution<double>\ gpaDist(1.0,\ 10.0);\ \textcolor{comment}{//\ Randomly\ select\ a\ GPA}}
+\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{double}\ gpa\ =\ gpaDist(gen);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordflow}{return}\ std::make\_tuple(name,\ age,\ gpa);}
+\DoxyCodeLine{00023\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_student_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{StudentClass.cpp@{StudentClass.cpp}!main@{main}}
+\index{main@{main}!StudentClass.cpp@{StudentClass.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_student_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_student_class_8cpp_source_l00167}{167}} of file \mbox{\hyperlink{_student_class_8cpp_source}{Student\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00168\ \ \ std::tuple\ <std::string,\ int,\ double>\ studentInfo1\ =\ \mbox{\hyperlink{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}{getStudentInfo}}();}
+\DoxyCodeLine{00169\ \ \ std::tuple\ <std::string,\ int,\ double>\ studentInfo2\ =\ \mbox{\hyperlink{_student_class_8cpp_acc81757e33eec6e2d8deb1b0a0c9f03b}{getStudentInfo}}();}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \textcolor{comment}{//\ Create\ a\ student\ object\ using\ the\ generated\ info}}
+\DoxyCodeLine{00172\ \ \ \mbox{\hyperlink{class_student}{Student}}\ student1(std::get<0>(studentInfo1),\ std::get<1>(studentInfo1),\ std::get<2>(studentInfo1));}
+\DoxyCodeLine{00173\ \ \ \mbox{\hyperlink{class_student}{Student}}\ student2(std::get<0>(studentInfo2),\ std::get<1>(studentInfo2),\ std::get<2>(studentInfo2));}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \textcolor{comment}{//\ Enroll\ the\ student\ in\ some\ courses}}
+\DoxyCodeLine{00176\ \ \ student1.enroll(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}Math"{}},\ 2021));}
+\DoxyCodeLine{00177\ \ \ student1.enroll(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}Science"{}},\ 2022));}
+\DoxyCodeLine{00178\ \ \ student2.enroll(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}History"{}},\ 2021));}
+\DoxyCodeLine{00179\ \ \ student2.enroll(\mbox{\hyperlink{class_student_1_1_course}{Student::Course}}(\textcolor{stringliteral}{"{}Art"{}},\ 2022));}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \textcolor{comment}{//\ Print\ student\ info\ and\ courses}}
+\DoxyCodeLine{00182\ \ \ student1.printInfo();}
+\DoxyCodeLine{00183\ \ \ student1.printCourses();}
+\DoxyCodeLine{00184\ \ \ student2.printInfo();}
+\DoxyCodeLine{00185\ \ \ student2.printCourses();}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \textcolor{comment}{//\ Print\ the\ number\ of\ students}}
+\DoxyCodeLine{00188\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Number\ of\ students:\ "{}}\ <<\ \mbox{\hyperlink{class_student_a9a22c0f9af7446b6c529b623e780b134}{Student::getNumStudents}}()\ <<\ std::endl;}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \textcolor{comment}{//\ Compare\ the\ GPAs\ of\ the\ two\ students}}
+\DoxyCodeLine{00191\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_student_class_8cpp_a9c47863c3ed0d00457f704ca7dd5d6b8}{compareGpa}}(student1,\ student2))\ \{}
+\DoxyCodeLine{00192\ \ \ \ \ std::cout\ <<\ student1.getName()\ <<\ \textcolor{stringliteral}{"{}\ has\ a\ higher\ GPA\ than\ "{}}\ <<\ student2.getName()\ <<\ std::endl;}
+\DoxyCodeLine{00193\ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00194\ \ \ \ \ std::cout\ <<\ student2.getName()\ <<\ \textcolor{stringliteral}{"{}\ has\ a\ higher\ GPA\ than\ "{}}\ <<\ student1.getName()\ <<\ std::endl;}
+\DoxyCodeLine{00195\ \ \ \}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00198\ \}}
+
+\end{DoxyCode}

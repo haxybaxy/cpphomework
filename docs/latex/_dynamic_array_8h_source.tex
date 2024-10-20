@@ -1,0 +1,53 @@
+\doxysection{Dynamic\+Array.\+h}
+\hypertarget{_dynamic_array_8h_source}{}\label{_dynamic_array_8h_source}\index{/Users/zaidsaheb/Desktop/oophomework/include/DynamicArray.h@{/Users/zaidsaheb/Desktop/oophomework/include/DynamicArray.h}}
+\mbox{\hyperlink{_dynamic_array_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ DYNAMICARRAY\_H}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ DYNAMICARRAY\_H}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00006}\mbox{\hyperlink{namespaceoop}{00006}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceoop}{oop}}\ \{}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00008}\mbox{\hyperlink{classoop_1_1_dynamic_array}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\ \{}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00009}00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00010}\mbox{\hyperlink{classoop_1_1_dynamic_array_ae67e8581b03c7f7f8bc412a28bc7aacd}{00010}}\ \ \ \ \ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{classoop_1_1_dynamic_array_ae67e8581b03c7f7f8bc412a28bc7aacd}{data}};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00011}\mbox{\hyperlink{classoop_1_1_dynamic_array_abb22dbf0390980ec98112ef60b984708}{00011}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classoop_1_1_dynamic_array_abb22dbf0390980ec98112ef60b984708}{length}};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00013}00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array_af0a88b666c891fc2df4ef89d8a9b4973}{DynamicArray}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classoop_1_1_dynamic_array_a85af9944c53cc8be191f3f347a4e253a}{size}});}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array_af0a88b666c891fc2df4ef89d8a9b4973}{DynamicArray}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classoop_1_1_dynamic_array_a85af9944c53cc8be191f3f347a4e253a}{size}},\ \textcolor{keywordtype}{int}\ initialValue);}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00018}00018\ \ \ \ \ \textcolor{comment}{//\ Copy\ Constructor}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array_af0a88b666c891fc2df4ef89d8a9b4973}{DynamicArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\ other);}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//\ Move\ Constructor}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array_af0a88b666c891fc2df4ef89d8a9b4973}{DynamicArray}}(\mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\&\ other)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00024}00024\ \ \ \ \ \textcolor{comment}{//\ Copy\ Assignment\ Operator}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\ \mbox{\hyperlink{classoop_1_1_dynamic_array_aa060ee297ba4ed83b465a55b446753b7}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\ other);}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//\ Move\ Assignment\ Operator}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\ \mbox{\hyperlink{classoop_1_1_dynamic_array_aa060ee297ba4ed83b465a55b446753b7}{operator=}}(\mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\&\ other)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array_a7627a07d704487c8e69517ff457555c9}{\string~DynamicArray}}();}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00033}00033\ \ \ \ \ \textcolor{comment}{//\ Overloaded\ Operators}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classoop_1_1_dynamic_array_adae82dc408c9243736bc3110153d3737}{operator[]}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00035}00035\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classoop_1_1_dynamic_array_adae82dc408c9243736bc3110153d3737}{operator[]}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00036}00036\ \ \ \ \ \mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\ \mbox{\hyperlink{classoop_1_1_dynamic_array_aa112a2c608cc4d142a49a08aa6bfbd32}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00038}00038\ \ \ \ \ \textcolor{comment}{//\ Friend\ Functions}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classoop_1_1_dynamic_array_a8a66206596f89fc453c53716ace398e5}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classoop_1_1_dynamic_array}{DynamicArray}}\&\ arr);}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00041}00041\ \ \ \ \ \textcolor{comment}{//\ Member\ Functions}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classoop_1_1_dynamic_array_a85af9944c53cc8be191f3f347a4e253a}{size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00043}00043\ \};}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00045}00045\ \}\ \textcolor{comment}{//\ namespace\ oop}}
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_dynamic_array_8h_source_l00047}00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DYNAMICARRAY\_H}}
+
+\end{DoxyCode}
